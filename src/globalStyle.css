@@ -48,11 +48,6 @@
     background-color: rgba(201, 201, 204, .35);
 }
 
-/* CUSTOM BLOCK SETTINGS */
-.ce-block:hover{
-    border: 1px dashed rgba(73, 182, 255, .5);
-    background-color: rgba(73, 182, 255, 0.05);
-}
 
 .customBlockTool {
     margin: 0;

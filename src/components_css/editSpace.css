@@ -2,7 +2,7 @@
     margin-top: 10px;
     display: flex;
     justify-content: space-evenly;
-    height: 100%; 
+    height: 100%;
 }
 
 .editorWrapper {
@@ -32,18 +32,54 @@
     user-select: none;
     height: 27rem;
     max-height: 100vh;
-    overflow-y: auto; 
+    overflow-y: auto;
 }
 
-#editorjs {
-    min-height: 650px;
+#editorjs,
+#editorContainer {
     min-width: 100%;
-    padding: 10px 0px 10px 0px;
-    flex: 1; 
-    overflow-y: auto; 
+    padding: 10px 0;
+    flex: 1;
 }
 
+#editorContainer {
+    overflow-y: auto;
+}
+
+.clearPageBtn {
+    background-color: rgba(255, 0, 0, 0.6);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
 
 .padding {
     padding: 5px;
+}
+
+.dropzone {
+    max-width: 79%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    height: 2px;
+    text-align: center;
+}
+
+.dropzone.visible {
+    border: 1px dashed #ccc !important;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropzone.active {
+    border-color: #e9ecef;
+    background-color: #f5f7f8;
+    height: 50px;
+    border: 0;
+}
+
+.codex-editor {
+    .codex-editor__redactor {
+        padding-bottom: 0 !important;
+    }
 }
